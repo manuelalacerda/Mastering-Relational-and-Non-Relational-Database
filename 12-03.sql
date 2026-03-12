@@ -104,7 +104,7 @@ for x in 1..10 loop
     end loop;
 end;
 
-// EXERCICIOS
+// EXERCICIOS MANUELA
 
 declare 
  v_contador number(2):=1;
@@ -117,6 +117,18 @@ loop
     else
         dbms_output.put_line('o número'||v_contador||' é impar');
     end if;
+end loop;
+end;
+
+//EXERCICIO PROFESSOR
+
+begin
+for x in 1..10 loop
+if mod(x,2) = 0 then
+dbms_output.put_line('O número '|| x ||' é par');
+else
+dbms_output.put_line('O número '|| x ||' é Ímpar');
+end if;
 end loop;
 end;
 
